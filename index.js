@@ -1,21 +1,19 @@
-//functions
+// === Nested Functions ===
+// JS lets you define functions within functions, otherwise known as nesting
 
-function test() {
-  console.log("THis is a test");
-} //declare the function,
-test(); //call the function
-
-function argument(student) {
-  //accepts an argument
-  console.log(`this is my student ${student}`);
+//global scope
+const number = 7;
+function doA() {
+  //start function scope
+  const number = 8;
+  function doB() {
+    const test = "hello there";
+    console.log(number);
+  }
+  doB(); //step 1
+  doB(); //step 2
+  doB(); //step 3
+  console.log(test);
 }
 
-argument("Claire"); //not type specific
-argument(8);
-
-function add(x, y) {
-  return x + y; //return sends the product/output outside of the function scope
-}
-//console.log(add(7, 9));
-const answer = add(7, 9);
-console.log(answer);
+doA();
