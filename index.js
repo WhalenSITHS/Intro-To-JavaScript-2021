@@ -1,14 +1,42 @@
-let variable; //variable declaration
-variable = "Variable"; //variable defintion
-let number = 7; //number data type
-let string = "Hello"; //string data type
-let truthy = true; //boolean
-let falsey = false; //booleans
-let bigString = "hello I'm a bigger string"; //camel case
+/* const age = 17;
+if (age >= 18) {
+  //if this condition is met we do X
+  alert("They are an adult");
+} else {
+  //otherwise we do this
+  alert("They are a child");
+}
+ */
+/* 
+const age = 17;
 
-var variable2 = "var"; //we dont do this
-let variable3; // we can define later OR REDEFINE
-variable = "nope";
-console.log(variable);
-const constant = "constant"; //cannot redefine, use this 95% of the time
-//constant = "liosdjafhgbnilk";
+if (age >= 65) {
+  console.log("Senior Citizen");
+} else if (age <= 18) {
+  console.log("They is child");
+} else {
+  console.log("they re an adult");
+}
+ */
+
+//switch statement
+
+/* const key = 342563455;
+switch (key) {
+  case 1: // if value is 1
+    console.log("monday");
+    break;
+  case 2:
+    console.log("tuesday");
+    break;
+  case 3:
+    console.log("Weds");
+    break;
+  case 4:
+    console.log("tthurs");
+    break;
+  default:
+    //the else essentially
+    console.log("time is wierd ");
+}
+ */
