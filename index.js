@@ -45,5 +45,26 @@ function mathTest(result1, result2, result3) {
 }
 
 console.log(mathTest(addOne, multiplyTwo, addThree)); */
+const Cindy = {
+  name: "Cindy",
+  age: 17,
+  cool: false,
+};
+function theName(name) {
+  return `Hello  my name is ${name}`;
+}
+function job() {
+  return `And I work at Stop and Shop`;
+}
 
-const story = "";
+function story(mainCharacter) {
+  let nameParam = mainCharacter.name;
+  const intro = theName(nameParam);
+  const theirJob = job();
+  if (mainCharacter.cool === true) {
+    return `${intro} ${theirJob} and I'm cool`;
+  } else {
+    return `${intro} ${theirJob} and I'm not cool`;
+  }
+}
+console.log(story(Cindy));
