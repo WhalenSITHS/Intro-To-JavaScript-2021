@@ -7,6 +7,13 @@ function greet(name) {
 
 const suzie = greet("suzie");
 
-suzie.then((hello) => {
-  console.log(hello);
+suzie.then((result) => {
+  console.log(result);
 });
+
+/* console.log("start");
+setTimeout(() => {
+  console.log("Timer");
+}, 3000);
+console.log("end");
+ */
