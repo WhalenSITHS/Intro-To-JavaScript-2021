@@ -13,7 +13,7 @@ suzie.then((result) => {
 
 /* console.log("start");
 setTimeout(() => {
-  console.log("Timer");
+  console.log("Three Seconds");
 }, 3000);
 console.log("end");
  */
