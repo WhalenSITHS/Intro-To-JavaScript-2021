@@ -3,9 +3,17 @@ const changeBtn = document.querySelector(".button");
 const headerTwo = document.querySelector(".header-two");
 
 function getRGB() {
-  let r = Math.floor(Math.random() * 256);
-  let b = Math.floor(Math.random() * 256);
-  let g = Math.floor(Math.random() * 256);
-  return { r, g, b };
+  let R = Math.floor(Math.random() * 256);
+  let G = Math.floor(Math.random() * 256);
+  let B = Math.floor(Math.random() * 256);
+  return { R, G, B }; //ends function
 }
-console.log(getRGB());
+function changeBackground(colorObject) {
+  background.style.backgroundColor = `rgb(${colorObject.R}, ${colorObject.G}, ${colorObject.B})`;
+}
+
+function startProgram() {
+  let anthing = getRGB();
+  changeBackground(anthing);
+}
+changeBtn.addEventListener("click", startProgram);
